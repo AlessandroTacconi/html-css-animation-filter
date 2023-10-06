@@ -72,3 +72,243 @@
   width: 60px;
   height: 20px;
 }
+
+/*
+ES1
+*/
+.ex-1-square {
+  transition: 5s;
+}
+
+.ex-1-square:hover {
+  background-color: red;
+}
+
+/*
+ES2
+*/
+.ex-2-square {
+  transition: 5s;
+}
+
+.ex-2-square:active {
+  width: 100%;
+}
+
+/*
+ES3
+*/
+.ex-3-square {
+  transition: 5s;
+}
+
+.ex-3-square:hover {
+  border-radius: 100%;
+}
+
+/*
+ES4
+*/
+.ex-4-square {
+  transition: 5s;
+}
+
+.ex-4-square:hover {
+  opacity: 0;
+}
+
+/*
+ES5
+*/
+.ex-5-square {
+  transition: 5s;
+}
+
+.ex-5-square:hover {
+  width: 100px;
+  height: 100px;
+}
+
+.ex-5-square:active {
+  width: 20px;
+  height: 20px;
+}
+
+/*
+ES6
+*/
+.ex-6-img:hover {
+  filter: grayscale(1);
+}
+
+/*
+ES7
+*/
+.ex-7-img {
+  transition: 5s;
+}
+
+.ex-7-img:hover {
+  filter: blur(3px) invert(4);
+}
+
+/*
+ES8
+*/
+.ex-8-img {
+  transition: 5s;
+}
+
+.ex-8-img:hover {
+  filter: blur(3px) invert(4);
+  border-radius: 100px;
+}
+
+/*
+ES9
+*/
+.ex-9-img {
+  transition: 5s;
+}
+
+.ex-9-img:hover {
+  filter: blur(3px) invert(4);
+  border-radius: 100px;
+  transform: scale(2);
+}
+
+/*
+ES10
+*/
+.ex-10-icon {
+  animation: spin-animation 5s infinite;
+}
+
+@keyframes spin-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(720deg);
+  }
+}
+
+/*
+ES11
+*/
+.ex-11-icon:hover {
+  animation: spin-animation2 3s;
+}
+
+@keyframes spin-animation2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  95% {
+    transform: rotate(270deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+/*
+ES12
+*/
+.ex-12-button:hover .ex-12-top-white {
+  animation: movehorizontallytop 5s;
+}
+@keyframes movehorizontallytop {
+  0% {
+    left: 20%;
+  }
+  50% {
+    left: 65%;
+  }
+  100% {
+    left: 20%;
+  }
+}
+.ex-12-button:hover .ex-12-bottom-white {
+  animation: movehorizontallybottom 5s;
+}
+@keyframes movehorizontallybottom {
+  0% {
+    right: 20%;
+  }
+  50% {
+    right: 65%;
+  }
+  100% {
+    right: 20%;
+  }
+}
+
+/*
+ES13
+*/
+.ex-13-button:hover .ex-13-top-white {
+  animation: moveTopWhiteCompletely 2s linear;
+}
+@keyframes movetopWhiteCompletely {
+  0% {
+    left: 10%;
+    top: -10px;
+  }
+  30% {
+    left: calc(100% - 30px);
+    top: -10px;
+  }
+  45% {
+    left: calc(100% - 30px);
+    top: 100%;
+  }
+  75% {
+    left: 0;
+    top: 100%;
+  }
+  90% {
+    left: -15px;
+    top: -10px;
+  }
+  100% {
+    left: 10%;
+    top: -10px;
+  }
+}
+.ex-13-button:hover .ex-13-bottom-white {
+  animation: moveBottomWhiteCompletely 2s linear;
+}
+@keyframes moveBottomWhiteCompletely {
+  0% {
+    bottom: -10px;
+    right: 20%;
+  }
+  30% {
+    right: calc(100% - 30px);
+    bottom: -10px;
+  }
+  45% {
+    right: calc(100% - 30px);
+    bottom: 100%;
+  }
+  75% {
+    right: 0;
+    bottom: 100%;
+  }
+  90% {
+    right: -15px;
+    bottom: -10px;
+  }
+  100% {
+    bottom: -10px;
+    right: 20%;
+  }
+}
+
+/*
+***
+il tredicesimo non sono riuscito
+***
+*/
